@@ -14,7 +14,6 @@ body {
 }
 
 nav {
-    position: fixed;
     background: rgb(75, 3, 3);
     height: 80px;
     width: 100%;
@@ -188,9 +187,14 @@ section.Tagline {
 
 .CoreCommitteeImg {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.CoreCommitteeImg img {
+    padding: 10px 50px;
 }
 
 @media (max-width: 1266px) {
@@ -203,8 +207,8 @@ section.Tagline {
 
 @media (max-width: 858px) {
     .CoreCommitteeImg img {
-        height: 250px;
-        width: 200px;
+        height: 300px;
+        width: 350px;
     }
 
     .Tagline h3 {
@@ -216,8 +220,8 @@ section.Tagline {
     }
 
     .Founder img {
-        height: 250px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
     }
 
     .FName {
