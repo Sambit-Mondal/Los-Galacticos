@@ -41,7 +41,7 @@
         <ul class="tabs">
             <li><a href="/home.html">HOME </a></li>
             <li><a href="/franchises.html"> FRANCHISES </a></li>
-            <li><a href="/squads.html"> SQUADS </a></li>
+            <li><a href="/players.html"> PLAYERS </a></li>
             <li><a class="active" href="/achievements.html" target="_self">ACHIEVEMENTS </a></li>
             <li><a href="/contactus.html"> CONTACT US</a></li>
         </ul>
@@ -213,38 +213,7 @@
 
     <!-- SCRIPT STARTS -->
 
-    <script>
-
-        $(document).ready(function () {
-
-            $('.buttons').click(function () {
-
-                $(this).addClass('active').siblings().removeClass('active');
-
-                var filter = $(this).attr('data-filter')
-
-                if (filter == 'all') {
-                    $('.image').show(400);
-                } else {
-                    $('.image').not('.' + filter).hide(200);
-                    $('.image').filter('.' + filter).show(400);
-                }
-
-            });
-
-            $('.gallery').magnificPopup({
-
-                delegate: 'a',
-                type: 'image',
-                gallery: {
-                    enabled: true
-                }
-
-            });
-
-        });
-
-    </script>
+    <script></script>
 
     <!-- SCRIPT ENDS -->
 
